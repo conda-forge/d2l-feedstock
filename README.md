@@ -1,11 +1,11 @@
-About d2l
-=========
+About d2l-feedstock
+===================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/d2l-feedstock/blob/main/LICENSE.txt)
 
 Home: https://d2l.ai
 
 Package license: MIT-0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/d2l-feedstock/blob/main/LICENSE.txt)
 
 Summary: Dive into Deep Learning
 
