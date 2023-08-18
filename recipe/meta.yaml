@@ -16,16 +16,17 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.8
     - pip
   run:
-    - python >=3.5
-    # cf. https://github.com/d2l-ai/d2l-en/blob/v0.17.6/setup.py#L5-L9
+    - python >=3.8
+    # cf. https://github.com/d2l-ai/d2l-en/blob/v1.0.1/setup.py
     - jupyter ==1.0.0
-    - numpy ==1.21.5
-    - matplotlib-base ==3.5.1
-    - requests ==2.25.1
-    - pandas ==1.2.4
+    - numpy ==1.23.5
+    - matplotlib-base ==3.7.2
+    - requests ==2.31.0
+    - pandas ==2.0.3
+    - scipy ==1.10.1
 
 test:
   imports:
