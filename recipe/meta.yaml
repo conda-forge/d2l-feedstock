@@ -1,5 +1,5 @@
 {% set name = "d2l" %}
-{% set version = "0.17.6" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/d2l-{{ version }}.tar.gz
-  sha256: 68bff6e00119f9d9ae830347e58bfb560f0fc1b9706afe4efdc5fe390925ec50
+  sha256: e6c709e79fcb0ce6378ece1d080ab9ff6444e6f0f75178ad9454125e1f711284
 
 build:
   noarch: python
