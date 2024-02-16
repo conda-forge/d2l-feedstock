@@ -1,5 +1,5 @@
 {% set name = "d2l" %}
-{% set version = "0.17.6" %}
+{% set version = "1.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/d2l-{{ version }}.tar.gz
-  sha256: 68bff6e00119f9d9ae830347e58bfb560f0fc1b9706afe4efdc5fe390925ec50
+  sha256: b69964354f8150d1ae02166d1eccd622c61f330bf61a23bae614be4fb59ce3be
 
 build:
   noarch: python
@@ -16,16 +16,18 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.8
     - pip
   run:
-    - python >=3.5
-    # cf. https://github.com/d2l-ai/d2l-en/blob/v0.17.6/setup.py#L5-L9
+    - python >=3.8
+    # cf. https://github.com/d2l-ai/d2l-en/blob/v1.0.3/setup.py
     - jupyter ==1.0.0
-    - numpy ==1.21.5
-    - matplotlib-base ==3.5.1
-    - requests ==2.25.1
-    - pandas ==1.2.4
+    - numpy ==1.23.5
+    - matplotlib-base ==3.7.2
+    - matplotlib-inline ==0.1.6
+    - requests ==2.31.0
+    - pandas ==2.0.3
+    - scipy ==1.10.1
 
 test:
   imports:
