@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/d2l-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/d2l-{{ version }}.tar.gz
   sha256: b69964354f8150d1ae02166d1eccd622c61f330bf61a23bae614be4fb59ce3be
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     # cf. https://github.com/d2l-ai/d2l-en/blob/v1.0.3/setup.py
     - jupyter ==1.0.0
     - numpy ==1.23.5
@@ -36,6 +36,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://d2l.ai
